@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 150px;
+}
+
+.card {
+    width: 250px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 25px;
+    box-shadow: 0px 0px 0px 1px;
+    padding: 60px;
+    
+    
+    
+}
+
+#button {
+    width: 200px;
+}
+
+button:hover {
+    background-color: rgb(221, 227, 226);
+    
+    
+}
+
+
+
+

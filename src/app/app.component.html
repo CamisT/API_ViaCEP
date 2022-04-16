@@ -1,0 +1,65 @@
+  <div class="container">
+  <mat-card class="card">
+    <h2>Pesquisa por CEP</h2>
+        <mat-card-content>
+        <mat-form-field id="busca" appearance="outline">
+          <mat-label>Buscar o CEP</mat-label>
+          <input
+           class="input"   
+           type="tel"
+           matInput placeholder="Informe um CEP"
+           [formControl]="CEPtoFind"
+           minlength="8"
+           maxlength="8"
+           required=""
+           (keyup.enter)="openDialog()"
+           (keydown.space)="$event.preventDefault()"
+           [(ngModel)]="cep"
+           >
+            <mat-error>
+              Por favor, digite um cep válido.
+            </mat-error>
+          </mat-form-field>
+          
+          <br>
+          
+          <button id="button"
+          mat-stroked-button color="primary"
+          (click)="openDialog()"
+          >
+          <mat-icon>search</mat-icon>
+          </button>
+        </mat-card-content>
+        </mat-card>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
